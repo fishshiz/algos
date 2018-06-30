@@ -3,11 +3,11 @@
 # @param {Integer[]} nums
 # @return {Integer}
 def max_sub_array(nums)
-    local = nums[0]
-    global = nums[0]
-    for num in nums[1..-1]
-        local = num + local > num ? num + local : num
-        global = local > global ? local : global
-    end
-    global
+  local = nums[0]
+  global = nums[0]
+  for num in nums[1..-1]
+    local = num + local > num ? num + local : num
+    global = local > global ? local : global
+  end
+  global
 end
